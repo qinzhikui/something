@@ -1,8 +1,10 @@
 package com.ximalaya.service;
 
 import com.ximalaya.model.User;
+import com.ximalaya.search.common.nlp.tools.repeat.ContentRepeat;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+import com.ximalaya.search.common.nlp.*;
 
 /*
 * Created by qinzhikui on 20180915
@@ -20,6 +22,9 @@ public class MybatisService{
         }
         user.setAge(age);
         user.setAddress(address);
+
+        ContentRepeat contentRepeat=new ContentRepeat();
+        double score=contentRepeat.repeatScore("哈哈哈");
         return true;
     }
 }

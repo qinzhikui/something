@@ -59,6 +59,12 @@
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>com.ximalaya.search</groupId>
+      <artifactId>common-nlp</artifactId>
+      <version>0.0.4</version>
+    </dependency>
+
   </dependencies>
 
   <build>
